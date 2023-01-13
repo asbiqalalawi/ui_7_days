@@ -8,7 +8,7 @@ class GetStartedPage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF8F8F8),
+      backgroundColor: const Color(0xffF8F8F8),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(40),
@@ -33,35 +33,46 @@ class GetStartedPage2 extends StatelessWidget {
                 height: 60,
               ),
               StaggeredGrid.count(
-                crossAxisCount: 4,
-                mainAxisSpacing: 4,
+                crossAxisCount: 2,
+                mainAxisSpacing: 10,
                 crossAxisSpacing: 10,
-                axisDirection: AxisDirection.down,
                 children: [
                   StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 2,
-                    child: Image.asset('assets/day_2/2_pic1.png'),
+                    crossAxisCellCount: 1,
+                    mainAxisCellCount: 1.5,
+                    child: Image.asset(
+                      'assets/day_2/2_pic1.png',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
+                    crossAxisCellCount: 1,
                     mainAxisCellCount: 1,
-                    child: Image.asset('assets/day_2/2_pic2.png'),
+                    child: Image.asset(
+                      'assets/day_2/2_pic2.png',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 2,
-                    child: Image.asset('assets/day_2/2_pic4.png'),
+                    crossAxisCellCount: 1,
+                    mainAxisCellCount: 1.5,
+                    child: Image.asset(
+                      'assets/day_2/2_pic4.png',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
+                    crossAxisCellCount: 1,
                     mainAxisCellCount: 1,
-                    child: Image.asset('assets/day_2/2_pic3.png'),
+                    child: Image.asset(
+                      'assets/day_2/2_pic3.png',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ],
               ),
               const SizedBox(
-                height: 70,
+                height: 40,
               ),
               Container(
                 height: 55,
@@ -78,11 +89,14 @@ class GetStartedPage2 extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Text(
-                'Terms & Conditions',
-                style: GoogleFonts.poppins(
-                  color: const Color(
-                    0xff757575,
+              Center(
+                child: Text(
+                  'Terms & Conditions',
+                  style: GoogleFonts.poppins(
+                    color: const Color(
+                      0xff757575,
+                    ),
+                    decoration: TextDecoration.underline,
                   ),
                 ),
               ),
