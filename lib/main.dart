@@ -7,6 +7,8 @@ import 'package:ui_7_days/day3/form_page_1.dart';
 import 'package:ui_7_days/day3/form_page_2.dart';
 import 'package:ui_7_days/day4/empty_page_1.dart';
 import 'package:ui_7_days/day4/empty_page_2.dart';
+import 'package:ui_7_days/day5/rating_page_1.dart';
+import 'package:ui_7_days/day5/rating_page_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: '7 Days UI',
-      home: EmptyPage2(),
+      home: RatingPage2(),
     );
   }
 }
