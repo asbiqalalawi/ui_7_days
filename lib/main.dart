@@ -11,6 +11,7 @@ import 'package:ui_7_days/day5/rating_page_1.dart';
 import 'package:ui_7_days/day5/rating_page_2.dart';
 import 'package:ui_7_days/day6/pricing_page_1.dart';
 import 'package:ui_7_days/day6/pricing_page_2.dart';
+import 'package:ui_7_days/day7/cart_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: '7 Days UI',
-      home: PricingPage2(),
+      home: CartPage(),
     );
   }
 }
