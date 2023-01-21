@@ -9,8 +9,8 @@ class CartPage extends StatefulWidget {
 }
 
 class _CartPageState extends State<CartPage> {
-  int cart1 = 0;
-  int cart2 = 0;
+  int cart1 = 1;
+  int cart2 = 1;
 
   @override
   Widget build(BuildContext context) {
